@@ -1,10 +1,11 @@
 import numpy as np
 import timeit
 
-nof_loops = 10000
+nof_loops = 100
 input_size = 1024
-input = np.random.rand(input_size)
-output = np.zeros(input_size)
+input = np.float32(np.random.rand(input_size))
+output = np.float32(np.zeros(input_size))
+
 
 def decorator(func):
     def wrapper():
